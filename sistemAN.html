@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <!-- Mengambil Nilai dari Data -->
+        <h2>Mengambil Nilai dari Data</h2>
+        <p id="demo"></p>
+
+    <script>
+    // Menampilkan tanggal hari ini
+    document.getElementById("demo").innerHTML = Date();
+    </script>
+
+    <hr>
+
+    <!-- Validasi Data -->
+        <h2>JavaScript Validation</h2>
+        <p>Masukan Nilai antara 1 sampai 10:</p>
+
+        <input id="num">
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <p id="hasil"></p>
+
+    <script>
+    function myFunction() {
+        let x = document.getElementById("num").value;
+        let text;
+        if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("hasil").innerHTML = text;
+    }
+    </script>
+
+    </body>
+</<h1 onclick="this.innerHTML = 'Ooops!'">Click Disini!</h1>
+
+    </body>
+</html>
